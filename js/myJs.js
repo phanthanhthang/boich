@@ -14,9 +14,9 @@ function firstQuestion(){
     
     $('.content').hide();
     Swal.fire({
-        title: 'He luu cậu!',
-        text: 'Tớ có điều này muốn hỏi cậu nhớ phải trả lời thật lòng nhaaa.',
-        imageUrl: '../img/cuteCat.jpg',
+        title: 'Bonne journée!',
+        text: 'Ngày mới rồi, vào việc thoiiiii.',
+        imageUrl: '../img/meocute.jpeg',
         imageWidth: 300,
         imageHeight: 300,
         background: '#fff url("../img/iput-bg.jpg")',
@@ -93,41 +93,15 @@ function textGenerate() {
 
 // show popup
 $('#yes').click(function() {
-    var audio = new Audio('../sound/tick.mp3');
+    var audio = new Audio('../sound/ido.mp3');
     audio.play();
     Swal.fire({
-        title: 'Nói cho tớ lí do cậu thích tớ đi :vvvv',
-        html: true,
         width: 900,
-        padding: '3em',
-        html: "<input type='text' class='form-control' id='txtReason' onmousemove=textGenerate()  placeholder='Whyyy'>",
+        confirmButtonText: 'Mãi iuuuu ạ <3',
         background: '#fff url("../img/iput-bg.jpg")',
-        backdrop: `
-              rgba(0,0,123,0.4)
-              url("../img/giphy2.gif")
-              left top
-              no-repeat
-            `,
-        showCancelButton: true,
-        cancelButtonText: "Thôi ngại lém :<<",
-        confirmButtonColor: '#3085d6',
-        cancelButtonColor: '#d33',
-        confirmButtonColor: '#fe8a71',
-        cancelButtonColor: '#f6cd61',
-        confirmButtonText: 'Gửi cho tớ <3'
-    }).then((result) => {
-        if (result.value) {
-            Swal.fire({
-                width: 900,
-                confirmButtonText: 'Okiiiii lun <3',
-                background: '#fff url("../img/iput-bg.jpg")',
-                title: 'Tớ biết mà ^^ Yêu cậu 300.000',
-                text: "Tối nay tớ qua đón cậu đi chơi nhaaaaaaaaa :v Còn giờ thì chờ gì nữa mà ko inbox cho tớ đi nàoooooo",
-                confirmButtonColor: '#83d0c9',
-                onClose: () => {
-                    window.location = 'http://fb.com';
-                  }
-            })
-        }
+        title: 'Xin cảm ơnnnn ngiuuu của toiii rất nhiều ạaaa!',
+        text: "Toii cũng iuu bạn gấc nhìu!!! Je t'extraimee aussiii ",
+        confirmButtonColor: '#83d0c9',
+
     })
 })
