@@ -16,10 +16,10 @@ function firstQuestion(){
     Swal.fire({
         title: 'Bonne journée!',
         text: 'Ngày mới rồi, vào việc thoiiiii.',
-        imageUrl: '../img/meocute.jpeg',
+        imageUrl: './img/meocute.jpeg',
         imageWidth: 300,
         imageHeight: 300,
-        background: '#fff url("../img/iput-bg.jpg")',
+        background: '#fff url("./img/iput-bg.jpg")',
         imageAlt: 'Custom image',
       }).then(function(){
         $('.content').show(200);
@@ -28,7 +28,7 @@ function firstQuestion(){
 
  // switch button position
  function switchButton() {
-    var audio = new Audio('../sound/duck.mp3');
+    var audio = new Audio('./sound/duck.mp3');
     audio.play();
     var leftNo = $('#no').css("left");
     var topNO = $('#no').css("top");
@@ -41,7 +41,7 @@ function firstQuestion(){
 }
 // move random button póition
 function moveButton() {
-    var audio = new Audio('../sound/Swish1.mp3');
+    var audio = new Audio('./sound/Swish1.mp3');
     audio.play();
     if (screen.width<=600) {
         var x = Math.random() * 300;
@@ -93,12 +93,12 @@ function textGenerate() {
 
 // show popup
 $('#yes').click(function() {
-    var audio = new Audio('../sound/ido.mp3');
+    var audio = new Audio('./sound/ido.mp3');
     audio.play();
     Swal.fire({
         width: 900,
         confirmButtonText: 'Mãi iuuuu ạ <3',
-        background: '#fff url("../img/iput-bg.jpg")',
+        background: '#fff url("./img/iput-bg.jpg")',
         title: 'Xin cảm ơnnnn ngiuuu của toiii rất nhiều ạaaa!',
         text: "Toii cũng iuu bạn gấc nhìu!!! Je t'extraimee aussiii ",
         confirmButtonColor: '#83d0c9',
